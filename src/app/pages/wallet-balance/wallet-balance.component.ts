@@ -19,7 +19,7 @@ export class WalletBalanceComponent implements OnInit {
         this.walletAddress = params['address'];
 
         const blockchain = this.blockchainService.blockchainInstance;
-        this.balance = blockchain.getBalanceOfAddress(this.walletAddress);
+        this.balance = blockchain.checkBalance(this.walletAddress);
         this.transactions = blockchain.getAllTransactionsForWallet(this.walletAddress);
     });
   }
