@@ -1,4 +1,4 @@
-<div class="card" [class.border-primary]="isSelectedBlock()">
+<div class="card" [class.border-primary]="isSelectedBlock()" style="cursor: pointer;">
     <div class="card-body">
       <h5 class="card-title">Block {{ getBlockNumber() }} <small class="text-muted" *ngIf="block.previousHash == 0">(Genesis block)</small></h5>
     </div>
